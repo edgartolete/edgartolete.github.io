@@ -1,0 +1,87 @@
+
+@font-face {
+  font-family: Poppins;
+  src: url('Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url('Ubuntu-Regular.ttf');
+}
+
+body{
+	font-family: 'Poppins', Serif;
+}
+
+
+p, table{
+	font-family: 'Ubuntu';
+}
+
+
+p{
+	color: #888;
+	text-align: center;
+	display: table;
+	margin: auto;
+	padding: 10px;
+}
+
+
+.col h3{
+	text-align: center;
+}
+.col p{
+	text-align: center;
+	
+}
+
+h1{
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 30px;
+	text-shadow: 1px 1px 1px black;
+}
+h2{
+	text-align: center;
+	text-shadow: 1px 1px 1px black;	
+}
+h3{
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.why-choose-us h1{
+	padding: 20px;
+}
+.why-choose-us p{
+	padding: 20px;
+}
+.advertise h1{
+	padding: 10px;
+	color: white;
+}
+
+.advertise h2{
+	padding: 10px;
+	color: white;
+}
+.happy-clients h1{
+	color: white;
+	padding: 20px;
+}
+
+.recent-project h1{
+	color: white;
+	padding: 20px;
+}
+.footer h2{
+	color: white;
+	padding-bottom: 50px;
+	padding-top: 30px;
+}
+.footer p{
+	margin-top: 30px;
+	color: white;
+}

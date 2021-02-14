@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+figure {
+	background: none;
+	display: block;
+	margin: 1.5em;
+	padding: .7em;
+	
+}
+.blockqoute {
+	padding: .5em;
+	font-size: 1.3em;
+	font-style: italic;
+	text-align: center;
+	color: white;
+	}
+.caption{
+	text-align: center;
+	margin-bottom: 1em;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+}
+
+.glider-contain{
+}
+
+.glider-prev{
+	top: 50%;
+	left: 30px;
+}
+.glider-next{
+	top: 50%;
+	right: 30px;
+}
+
