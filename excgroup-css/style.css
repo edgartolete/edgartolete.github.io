@@ -51,6 +51,9 @@
 	left: -60px;
 }
 
+.main-content .left-col .si-content-area h3{
+	margin: 0px;
+}
 .tl-box:nth-child(odd) img{
 	position: absolute;
 	left: -24px;
@@ -75,9 +78,7 @@
 .si-content-area img{
 	margin: 0px!important;
 }
-.main-content .left-col .si-content-area h3{
-	margin: none;
-}
+
 
 @media only screen and (max-width: 740px){
 	.timeline{
