@@ -1,3 +1,6 @@
+.main-content .left-col .si-content-area h3{
+	margin: 0px;
+}
 .timeline{
 	width: 100%;
 	display: grid;
@@ -10,8 +13,8 @@
 	position: relative;
 }
 .tl-box:nth-child(even) h3, .tl-box:nth-child(even) p{
-	margin-right: 80px;
-	transform: translateY(-10px);
+	margin-right: 80px!important;
+	transform: translateY(10px);
 }
 
 .tl-box:nth-child(even) h3::after{
@@ -38,8 +41,8 @@
 }
 
 .tl-box:nth-child(odd) h3, .tl-box:nth-child(odd) p{
-	margin-left: 80px;
-	transform: translateY(-10px);
+	margin-left: 80px!important;
+	transform: translateY(10px);
 }
 
 .tl-box:nth-child(odd) h3::before{
@@ -51,9 +54,7 @@
 	left: -60px;
 }
 
-.main-content .left-col .si-content-area h3{
-	margin: 0px;
-}
+
 .tl-box:nth-child(odd) img{
 	position: absolute;
 	left: -24px;
