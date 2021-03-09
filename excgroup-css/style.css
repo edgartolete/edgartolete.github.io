@@ -111,3 +111,6 @@
 	.si-content-area img{
 		margin: 0px!important;
 }
+	.main-content .left-col .si-content-area h3{
+		margin: 0px!important;
+	}
