@@ -72,6 +72,13 @@
 	padding-right: 20px;
 }
 
+.si-content-area img{
+	margin: 0px!important;
+}
+.main-content .left-col .si-content-area h3{
+	margin: 0px!important;
+}
+
 @media only screen and (max-width: 740px){
 	.timeline{
 		grid-template-columns: repeat(1, 1fr);		
@@ -108,9 +115,4 @@
 	height: 15px;
 	left: -60px;
 }
-	.si-content-area img{
-		margin: 0px!important;
-}
-	.main-content .left-col .si-content-area h3{
-		margin: 0px!important;
-	}
+
