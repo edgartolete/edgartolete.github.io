@@ -35,7 +35,9 @@
 .no-dash h3::before{
 	display: none;
 }
-
+.no-dash h3::after{
+	display: none;
+}
 
 .tl-box:nth-child(odd){
 	border-left: 3px solid #ddd;
@@ -119,3 +121,8 @@
 .si-content-area img{
 	margin: 0px!important;
 }
+
+.main-content .left-col .si-content-area h3{
+	margin: 0px;
+}
+
