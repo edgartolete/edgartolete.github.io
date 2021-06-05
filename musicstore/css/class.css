@@ -1,0 +1,174 @@
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
+	padding: 0px 20px;
+}
+.navbar a{
+	text-decoration: none;
+	color: white;
+	padding: 10px 20px;
+	transition: 300ms;
+}
+	
+.navbar a:hover{
+	background-color: var(--color-1);
+}
+.navbar-title{
+	display: flex;
+	align-items: center;
+	display-direction: row;
+}
+.navbar-title > div{
+	display: flex;
+	align-items: center;
+	display-direction: row;
+}
+.navbar-title p{
+	color: white;
+	padding-left: 10px;
+	font-size: 1.3rem;
+}
+
+.navbar-title > div > i{
+	display: none;
+	cursor: pointer;
+}
+
+.navbar-menu{
+	display: flex;
+	text-align: center;
+	paading: 10px;
+}
+
+.grid-special-1a img{
+	width: 100%;
+	box-shadow: 10px 10px 30px rgba(0,0,0,0.7);
+}
+.grid-special-1b img{
+	width: 100%;
+	box-shadow: 10px 10px 30px rgba(0,0,0,0.7);
+}
+.grid-special-1c img{
+	width: 100%;
+	box-shadow: 10px 10px 30px rgba(0,0,0,0.7);
+}
+
+.grid-special-2a img{
+	width: 100%;
+		box-shadow: 0px 10px 30px rgba(0,0,0,0.7);
+}
+.grid-special-2b img{
+	width: 100%;
+		box-shadow: 0px 10px 30px rgba(0,0,0,0.7);
+}
+.grid-special-2c img{
+	width: 100%;
+		box-shadow: 0px 10px 30px rgba(0,0,0,0.7);
+}
+
+.btn-primary{
+	text-decoration: none;
+	color: white;
+	font-family: Verdana;
+	background-color: var(--color-1);
+	padding: 20px 30px;
+	border-radius: 100px;
+	margin-right: 20px;
+	margin-top: 20px;
+	font-weight: bold;
+	border: 2px solid white;
+	transition: 300ms;
+}
+.btn-primary:hover{
+	color: var(--color-1);
+	background-color: white;
+	border: 2px solid var(--color-1);
+}
+
+.fname{
+	width: 100%;
+	padding: 10px;
+	margin-top: 20px;
+}
+
+.email{
+		width: 100%;	padding: 10px;	margin-top: 20px;
+}
+
+.number{
+		width: 100%;	padding: 10px; 	margin-top: 20px;
+}
+.message{
+		width: 100%;	padding: 10px;	margin-top: 20px;
+}
+.submit{padding: 10px;	margin-top: 20px; background-color: var(--color-1); color: white; border: 1px solid #ddd; border-radius: 5px; font-weight: bold;
+}
+
+.content{
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	
+
+}
+
+.client{
+	padding: 20px;
+	padding-top: 80px; 
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+	min-height: 400px;
+
+}
+.client-avatar{
+	display: grid;
+	justify-content: center;
+	width: 100%;
+	transform: translate3d(0px, 60px, 0px);	
+
+
+	
+}
+.client-avatar img{
+	justify-self: center;
+	width: 120px; border-radius: 100px;
+	border: 1px solid #999;
+
+}
+.testimonial{
+}
+.testimonial h3,.testimonial p, .stars{
+	margin: 5px; padding: 10px;
+}
+
+.testimonial p{
+	color: #555;
+	font-family: Georgia, serif;
+	font-size: 17px;
+	line-height: 1.6;
+}
+
+
+.grid-4{
+	width: 100%;
+	display: grid;
+	grid-template-columns:  repeat(4, 1fr);
+	padding: 20px;
+	grid-gap: 20px;
+}
+
+.grid-4 > div > img{
+	border-radius: 5px;
+	width: 100%;
+	transition: 300ms;
+}
+
+.grid-4 > div > img:hover{
+	transform: scale(1.13);
+	cursor:pointer;
+}
+
+

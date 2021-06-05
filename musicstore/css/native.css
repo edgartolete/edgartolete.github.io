@@ -1,0 +1,46 @@
+*{
+	margin: 0;  padding: 0; box-sizing: border-box;
+}
+html, body{
+	scroll-behavior: smooth;
+}
+
+header{
+	padding: 10vw 20px;
+	background-image: url("../img/pexels-freestocksorg-96380.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 2rem;
+}
+
+header > div{
+	position: relative;
+	display: grid;
+	align-items: center;
+}
+header > div:nth-child(2){
+	position: relative;
+	display: grid;
+	justify-content: right;
+}
+header > div > img{
+	width: 400px;
+}
+
+section{
+	width: 100%;
+	padding: 50px 0px;
+}
+
+footer{
+	background-color: black;
+	color: white;
+	margin: 0;
+	padding: 30px 20px;
+	text-align: center;
+	
+}
