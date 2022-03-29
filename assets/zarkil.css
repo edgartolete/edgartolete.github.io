@@ -690,6 +690,11 @@ body{
 [grid-2] > div{
 	position: relative;
 	}
+[grid-2] > div img{
+		width: 100%;
+		margin: 0;
+		border-radius: 5px 5px 0px 0px;
+}
 [grid-3]{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -714,6 +719,11 @@ body{
 [grid-4] > div{
 	position: relative;
 	}
+[grid-4] > div img{
+		width: 100%;
+		margin: 0;
+		border-radius: 5px 5px 0px 0px;
+}
 [flex-row]{
 	width: 100%;
 	display: flex;
