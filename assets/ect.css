@@ -122,44 +122,51 @@ body{
 /*NAVIGATIONS */
 	/*navigation1 */
 [navbar-1]{
+	background-color: white;
+	display: grid;
+	position: fixed;
+	z-index: 1000;
+	width: 100%;
+	}
+[navbar-1] > div{
 	display: flex; 
 	flex-direction: row; 
 	width: 100%;
 	justify-content: space-between;
 	align-items:center;
 	z-index: 1000;
-	position: fixed;
+	justify-self: center;
 	background-color: white;
 	}
-[navbar-1] > div {
+[navbar-1] > div > div {
 	display: flex;
 	flex-direction: row;
 	}
-[navbar-1] > div:nth-child(1) > div {
+[navbar-1] > div > div:nth-child(1) > div {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	}
-[navbar-1] > div:nth-child(1)>div>[logo]{
+[navbar-1] > div > div:nth-child(1)>div>[logo]{
 	height: 32px;
 	margin: 10px;
 	}
-[navbar-1]>div:nth-child(1)>div>[title]{
+[navbar-1] > div>div:nth-child(1)>div>[title]{
 	font-size: 34px;
 	margin: 10px;
 	}
-[navbar-1]>div:nth-child(1)>div>[bar]{
+[navbar-1] > div>div:nth-child(1)>div>[bar]{
 	height: 32px;
 	margin: 10px;
 	display: none;
 	padding: 5px;
 	cursor: pointer;
 	}
-[navbar-1]>div:nth-child(2){
+[navbar-1] > div>div:nth-child(2){
 	display: flex;
 	flex-direction: row;
 	}
-[navbar-1]>div:nth-child(2)>a{
+[navbar-1] > div>div:nth-child(2)>a{
 	align-items: center;
 	text-decoration: none;
 	padding: 20px;
@@ -167,11 +174,15 @@ body{
 	transition: 300ms;
 	font-size: 14px;
 	}
-[navbar-1]>div:nth-child(2)>a:hover{
+[navbar-1] > div>div:nth-child(2)>a:hover{
 	background-color: var(--color-1);
 	color: white;
 	}
-	
+[navbar-md] > div{
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+}	
 	
 	/*navigation2*/
 [navbar-2]{
@@ -298,7 +309,7 @@ body{
 [header-1]{
 	width: 100%; 
 	display: flex;
-	flex direction: column;
+	flex-direction: column;
 	justify-content: center;
 	color: white;
 	padding: 22vh 0px;
@@ -328,10 +339,7 @@ body{
 	}
 [header-1] div span{
 	padding: 10px 0px;
-	}
-
-[header-1] div p
-	}
+}
 
 /*BUTTONS */
 [btn-1]{
@@ -676,6 +684,7 @@ body{
 	max-width: 767px;
 	margin: auto;
 	}
+
 [grid-center]{
 	display: grid;
 	place-items: center;
@@ -734,7 +743,7 @@ body{
 [flex-row] > [start]{
 	margin-right: auto;
 	padding: 20px; 
-	ont-weight: bold;
+	font-weight: bold;
 	color: #555;
 	font-size: 1.1rem;
 	}
@@ -806,23 +815,23 @@ body{
 /*BREAKPOINTS */
 @media(max-width: 1200px){}
 @media(max-width: 1024px){
-		[navbar-1]{
-		flex-direction: column
-		;}
-	[navbar-1] > div:nth-child(1){
+	[navbar-1] > div{
+		flex-direction: column;
+	}
+	[navbar-1]  > div> div:nth-child(1){
 		display: flex;
 		justify-content:space-between;
 		width: 100%;
 		}
-	[navbar-1] > div:nth-child(1) > div > [bar]{
+	[navbar-1]  > div> div:nth-child(1) > div > [bar]{
 		display: block;
 		}	
-	[navbar-1] > div:nth-child(2){
+	[navbar-1]  > div> div:nth-child(2){
 		flex-direction: column;
 		display: none;
 		width: 100%;
 		}
-	[navbar-1] > div:nth-child(2) a{
+	[navbar-1]  > div> div:nth-child(2) a{
 		text-align: center;
 		border-top: 1px solid #ccc;
 		}
@@ -917,4 +926,5 @@ body{
 @media(max-width: 500px){
 	.contact-avatar{
 		flex-direction: column; justify-content: center; text-align: center;
+	}
 }
