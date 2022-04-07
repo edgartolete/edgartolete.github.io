@@ -17,8 +17,11 @@
     <input type="text" id="increase" placeholder="Annual Increase"/><br>
     <input type="text" id="returns" placeholder="Annual Returns"/><br>
     <input type="text" id="years" placeholder="years duration"/><br>
-    <button onclick="TotalReturns()">Compute</button>
+    <button onclick="TotalReturns()">Compute</button><br>
+    <p>TOTAL CAPITAL:</p>
     <pre id="result" style="display: inline;"></pre>
+    <p>MONTHLY DIVIDENDS:</p>
+    <pre id="dividends" style="display: inline;"></pre>
     <script>
         function separator(numb) {
         var str = numb.toString().split(".");
@@ -41,6 +44,7 @@
             
             result = separator(result.toFixed(2));
             document.getElementById("result").innerHTML = result;
+            document.getElementById("dividends").innerHTML = (result * 0.05) / 12;
         }
     </script>
 </body>
