@@ -18,9 +18,9 @@
     <input type="text" id="returns" placeholder="Annual Returns"/><br>
     <input type="text" id="years" placeholder="years duration"/><br>
     <button onclick="TotalReturns()">Compute</button><br>
-    <p>TOTAL CAPITAL:</p>
+    <p>Total Capital:</p>
     <pre id="result" style="display: inline;"></pre>
-    <p>MONTHLY DIVIDENDS:</p>
+    <p>Monthly Dividends:</p>
     <pre id="dividends" style="display: inline;"></pre>
     <script>
         function separator(numb) {
@@ -41,10 +41,11 @@
                 result = result *  (1 + (returns/100));
                 annual = annual *(1 + (increase/100))
             }
-            
+            dividends = (result * 0.05) / 12;
             result = separator(result.toFixed(2));
+            dividends = separator(dividends.toFixed(2));
             document.getElementById("result").innerHTML = result;
-            document.getElementById("dividends").innerHTML = (result * 0.05) / 12;
+            document.getElementById("dividends").innerHTML = dividends;
         }
     </script>
 </body>
