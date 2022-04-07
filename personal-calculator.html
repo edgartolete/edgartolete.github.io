@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Personal Calculator</title>
+    <style>
+        input{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Investment Calculator</h2>
+    <input type="text" id="monthly" placeholder="Monthly"/><br>
+    <input type="text" id="increase" placeholder="Annual Increase"/><br>
+    <input type="text" id="returns" placeholder="Annual Returns"/><br>
+    <input type="text" id="years" placeholder="years duration"/><br>
+    <button onclick="TotalReturns()">Compute</button>
+    <pre id="result" style="display: inline;"></pre>
+    <script>
+        function separator(numb) {
+        var str = numb.toString().split(".");
+        str[0] = str[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        return str.join(".");
+    }
+
+        function TotalReturns (){
+            let monthly = document.getElementById("monthly").value;
+            let returns = document.getElementById("returns").value;
+            let years = document.getElementById("years").value;
+            let increase = document.getElementById("increase").value;
+            var result = 0;
+            annual = (monthly * 12);
+            for(var i = 0; i < years; i++){
+                result = annual + result;
+                result = result *  (1 + (returns/100));
+                annual = annual *(1 + (increase/100))
+            }
+            
+            result = separator(result.toFixed(2));
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+</body>
+</html>
