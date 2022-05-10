@@ -1,0 +1,23 @@
+*{
+	margin: 0; padding: 0; box-sizing: border-box;
+}
+html, body{
+	scroll-behavior: smooth;
+}
+
+:root{ 
+	--font-1: 'Poppins', san-serif;
+	--font-2: 'Roboto', sans-serif;
+	--font-3: 'Quicksand', sans-serif;
+    --color-1: #1779ff;
+	--color-2: #27ae60;
+	--color-3: #e74c3c;
+}
+
+@import "text";
+@import "colors";
+@import "alignment";
+@import "nav-style1";
+@import "nav-style2";
+@import "header1";
+@import "buttons";

@@ -314,7 +314,6 @@ body{
 	color: white;
 	padding: 22vh 0px;
 	z-index: -1;
-/*	background-color: rgba(0,0,0,.5);*/
 	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("../img/lucas-benjamin-wQLAGv4_OYs-unsplash.jpg");
 	background-attachment: fixed;
 	background-position: center;
@@ -529,24 +528,23 @@ body{
 	box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
 	transition: 0.3s;
 	}
-[card-lift] > div {
-	transition: 0.3s;
-	box-shadow: 0px 00px 10px rgba(0,0,0,0.3);
+	
+.card-lift > div {
+	transition: 100ms;
 	}
-[card-lift] > div:hover{
+.card-lift > div:hover{
 	transform: translate3d(0px, -15px, 0px);
-	box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
 	}
-[card-zoom] > div{
+.card-zoom > div{
 	transition: 0.3s;
 	}
-[card-zoom] > div:hover{
+.card-zoom > div:hover{
 	transform: scale(1.1);
 	}
-[border] > div{
+.border > div{
 	border: 1px solid #ddd;
 	}
-[borders] > div{
+.borders > div{
 	border: 1px solid #ddd;
 	}
 [edge-soft] > div {
