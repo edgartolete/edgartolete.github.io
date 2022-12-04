@@ -1,6 +1,6 @@
 :root{ //configure color values 
     --btn-dash-color: white;
-    --btn-bg-color: var(--secondary);
+    --btn-bg-color: var(--primary);
 }
 
 
@@ -21,6 +21,7 @@
             // animation: btnshadowpulse 1400ms linear infinite;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
             transform: scale(1.2)
+
         }
         &::before{
             content: "";
@@ -57,6 +58,7 @@
         margin: 0px;
         &:hover{
             color: white;
+            background-color: var(--secondary);
         }
         &::before{
             content: "";

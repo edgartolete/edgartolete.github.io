@@ -264,7 +264,7 @@ section h2 {
 
 :root {
   --btn-dash-color: white;
-  --btn-bg-color: var(--secondary);
+  --btn-bg-color: var(--primary);
 }
 
 .btn-cool {
@@ -325,6 +325,7 @@ section h2 {
 }
 .btn-cool .text:hover {
   color: white;
+  background-color: var(--secondary);
 }
 .btn-cool .text::before {
   content: "";
