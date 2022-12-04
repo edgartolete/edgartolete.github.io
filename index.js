@@ -1,9 +1,12 @@
-setTimeout(() => {
-    var allImgHeight = document.querySelectorAll('img[height]');
-    for(var i = 0; i < allImgHeight.length; i++){
-      allImgHeight[i].setAttribute("height", "auto");
-    }
-}, 3000);
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(() => {
+        var allImgHeight = document.querySelectorAll('img[height]');
+        for(var i = 0; i < allImgHeight.length; i++){
+          allImgHeight[i].setAttribute("height", "auto");
+        }
+    }, 3000);
+});
+
 
 // Get the button:
 
