@@ -1,6 +1,9 @@
+
 console.time();
+console.timeLog();
 document.addEventListener("DOMContentLoaded", function () {
-console.timeEnd();
+  console.timeLog();
+  console.timeEnd();
   var allImgHeight = document.querySelectorAll('img[height]');
     for(var i = 0; i < allImgHeight.length; i++){
       allImgHeight[i].setAttribute("height", "auto");
@@ -109,3 +112,4 @@ showAll = () => {
     showAllHardCoded();
 
   }
+
