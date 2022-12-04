@@ -1,9 +1,9 @@
 
-console.time();
-console.timeLog();
+console.time('JS Performance');
+console.timeLog('JS Performance');
 document.addEventListener("DOMContentLoaded", function () {
-  console.timeLog();
-  console.timeEnd();
+  console.timeLog('JS Performance');
+  console.timeEnd('JS Performance');
   var allImgHeight = document.querySelectorAll('img[height]');
     for(var i = 0; i < allImgHeight.length; i++){
       allImgHeight[i].setAttribute("height", "auto");
