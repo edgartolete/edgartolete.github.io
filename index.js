@@ -1,5 +1,15 @@
+console.time();
+document.addEventListener("DOMContentLoaded", function () {
+console.timeEnd();
+  var allImgHeight = document.querySelectorAll('img[height]');
+    for(var i = 0; i < allImgHeight.length; i++){
+      allImgHeight[i].setAttribute("height", "auto");
+    }
+});
+
+
 // Get the button:
-console.log('connected');
+
 let mybutton = document.getElementById("goTop");
 mybutton.style.display = "none";
 // When the user scrolls down 20px from the top of the document, show the button
