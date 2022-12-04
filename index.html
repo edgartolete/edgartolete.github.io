@@ -51,7 +51,7 @@
                     </div>
                 
                 </div>
-                <div class="portfolio" wordpress>
+                <div class="portfolio" wordpress data-scroll>
                     <div class="image">
                         <img src="./img/oie_6CFP90hFTHwq.webp" alt="" >
                     </div>
@@ -68,7 +68,7 @@
                     </div>
                 </div>
 
-                <div class="portfolio " wordpress>
+                <div class="portfolio " wordpress data-scroll>
                     <div class="image">
                         <img src="./img/oie_g7wsdwdzfC2U.webp" alt="" >
                     </div>
@@ -85,7 +85,7 @@
                     </div>
                 </div>
 
-                <div class="portfolio" hardcoded>
+                <div class="portfolio" hardcoded data-scroll>
                     <div class="image">
                         <img src="https://edgartolete.com/img/oie_vHAzeV1UxhIV.webp" alt="" loading="lazy">
                     </div>
@@ -103,7 +103,7 @@
 
 
 
-                <div class="portfolio" wordpress>
+                <div class="portfolio" wordpress data-scroll>
                     <div class="image">
                         <img src="./img/oie_vAAeyA9x9V4m.webp" alt="" loading="lazy" >
                     </div>
@@ -117,7 +117,7 @@
                             Site</a>
                     </div>
                 </div>
-                <div class="portfolio" hardcoded>
+                <div class="portfolio" hardcoded data-scroll>
                     <div class="image">
                         <img src="https://edgartolete.com/img/oie_pCtbK3rHhGhC.webp" alt="" loading="lazy" >
                     </div>
@@ -141,13 +141,13 @@
                 <hr>
 
                 <div class="grid-4" style="max-width: 700px; margin: auto; margin-top: 50px;margin-bottom: 50px;">
-                    <div>
-                        <div class="flex-skills">
+                    <div data-scroll>
+                        <div  class="flex-skills">
                             <img class="img" src="https://edgartolete.com/img/vuejs.svg" alt="" loading="lazy" >
                             <p class="text">VueJS</p>
                         </div>
                     </div>
-                    <div>
+                    <div data-scroll>
                         <div class="flex-skills">
                             <img class="img"
                                 src="https://edgartolete.com/img/jQuery.png"
@@ -157,7 +157,7 @@
                             <p class="text">jQuery</p>
                         </div>
                     </div>
-                    <div>
+                    <div data-scroll>
                         <div class="flex-skills">
                             <img class="img"
                                 src="https://edgartolete.com/img/JavaScript.png"
@@ -167,7 +167,7 @@
                             <p class="text">JavaScript</p>
                         </div>
                     </div>
-                    <div>
+                    <div data-scroll>
                         <div class="flex-skills">
                             <img class="img"
                                 src="https://edgartolete.com/img/Sass.png"
@@ -177,7 +177,7 @@
                             <p class="text">Sass</p>
                         </div>
                     </div>
-                    <div>
+                    <div data-scroll>
                         <div class="flex-skills">
                             <img class="img"
                                 src="https://edgartolete.com/img/css3.png"
@@ -187,7 +187,7 @@
                             <p class="text">css3</p>
                         </div>
                     </div>
-                    <div>
+                    <div data-scroll>
                         <div class="flex-skills">
                             <img class="img" 
                             src="https://edgartolete.com/img/html5.png" 
@@ -197,7 +197,7 @@
                             <p class="text">html5</p>
                         </div>
                     </div>
-                    <div>
+                    <div data-scroll>
                         <div class="flex-skills">
                             <img class="img"
                                 src="https://edgartolete.com/img/Shopify.png"
@@ -207,7 +207,7 @@
                             <p class="text">Shopify</p>
                         </div>
                     </div>
-                    <div>
+                    <div data-scroll>
                         <div class="flex-skills">
                             <img class="img" 
                             src="https://edgartolete.com/img/WordPress.png" 
@@ -228,12 +228,12 @@
                     <h3 class="text-center p-20" >Page Speed & SEO Optimization</h3>
                     <p class="text-center">I also do my best to make the website fast and search engine optimized.</p>
                     <div class="grid justify-center p-20">
-                        <fieldset>
+                        <fieldset data-scroll>
                             <legend>Google Page Speed Insight Result</legend>
                         <img src="./img/PageSpeed-Insight-Performance.webp" alt="" loading="lazy"
                             style="width: 100%">
                         </fieldset>
-                        <fieldset class="mt-20">
+                        <fieldset class="mt-20" data-scroll>
                             <legend>GTMetrix Result</legend>
                             <img src="./img/GTMetrix-Performance.webp" alt="" loading="lazy" style="width: 100%">
                         </fieldset>
@@ -281,5 +281,10 @@
 
 
 <script src="index.js" defer></script>
+<script src='./src/scroll-out.min.js'></script>
+<script>ScrollOut({
+        once: true, //animation will work only once if false
+        threshold: 0.5
+    });</script>
 </body>
 </html>

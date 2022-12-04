@@ -210,3 +210,18 @@ section{
     }
 
 }
+
+// for scroll animation
+[data-scroll] {
+    transition: all 1000ms;
+}
+
+[data-scroll="in"] {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+[data-scroll="out"] {
+    opacity: 0;
+    transform: translateY(100px);
+}

@@ -4,13 +4,26 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
-h1,h2, h3, h4, h5,h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Montserrat', sans-serif;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-a,p {
+
+a,
+p,
+legend {
     font-family: 'Nunito', sans-serif;
 
+}
+legend{
+    font-weight: bold;
 }
 
 //Buttons
@@ -20,33 +33,39 @@ a,p {
     border-radius: 5px;
 
 }
+
 .btn.btn-primary {
     background-color: var(--primary);
     color: white;
     padding: 10px 30px;
 }
-.btn.shadow{
+
+.btn.shadow {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
 }
-.btn.pill{
+
+.btn.pill {
     border-radius: 50px !important;
 }
-.btn.zoom{
+
+.btn.zoom {
     &:hover {
-            transform: scale(1.2)
-        }
+        transform: scale(1.2)
+    }
 }
-.btn.zoom.pill{
+
+.btn.zoom.pill {
     &:hover {
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
-        }
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    }
 }
 
 
-a{
+a {
     text-decoration: none;
     cursor: pointer;
 }
+
 hr {
     color: var(--primary);
     width: 100px;
@@ -55,38 +74,46 @@ hr {
     margin-bottom: 40px;
 }
 
-.container.grid{
+.container.grid {
     display: grid;
 }
-.container.grid.center{
-    justify-content: center;
-}
-.flex{
-    display: flex;
-}
-.flex.center{
+
+.container.grid.center {
     justify-content: center;
 }
 
-.container.p-20{
+.flex {
+    display: flex;
+}
+
+.flex.center {
+    justify-content: center;
+}
+
+.container.p-20 {
     padding: 20px;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
-.p-20{
+
+.p-20 {
     padding-top: 20px;
 }
 
-.grid{
+.grid {
     display: grid;
-    &.justify-center{
+
+    &.justify-center {
         justify-content: center;
     }
 }
-.mt-50{
+
+.mt-50 {
     margin-top: 50px;
 }
-.mt-20{
+
+.mt-20 {
     margin-top: 20px;
 }
