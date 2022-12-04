@@ -1,0 +1,43 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .avatar {
+        border-radius: 50%;
+        width: 80%;
+        margin: auto;
+    }
+
+    h1 {
+        margin-bottom: 0px;
+        color: white;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        color: white;
+        margin-bottom: 0;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        margin-top: 20px;
+
+        a {
+            font-size: 0.8rem;
+            padding: 10px 20px;
+            border: 2px solid white;
+            color: white;
+            &:hover{
+                background: var(--secondary);
+            }
+        }
+
+    }
+
+}

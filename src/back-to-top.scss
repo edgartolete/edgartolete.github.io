@@ -1,0 +1,19 @@
+#goTop {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 50px;
+    right: 50px;
+    background: var(--primary);
+    color: white;
+    font-size: 1.5rem;
+    opacity: 0.6;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 5px solid var(--secondary);
+    &:hover {
+        opacity: 1;
+    }
+}

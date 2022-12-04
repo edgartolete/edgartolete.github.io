@@ -1,0 +1,1 @@
+#goTop{display:grid;place-items:center;position:fixed;width:60px;height:60px;bottom:50px;right:50px;background:var(--primary);color:#fff;font-size:1.5rem;opacity:.6;border-radius:50px;cursor:pointer;border:5px solid var(--secondary)}#goTop:hover{opacity:1}/*# sourceMappingURL=back-to-top.min.css.map */

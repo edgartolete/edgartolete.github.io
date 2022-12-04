@@ -1,97 +1,250 @@
-<!DOCTYPE HTML>
-<html lang=en>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Edgar Tolete - Web Developer (Official Website)</title>
-<meta name="description" content="Official Website of Edgar Tolete. Edgar Tolete is a Web Developer with the skills of HTML, CSS, JavaScript, WordPress, Shopify and more..">
-<meta name="keywords" content="Edgar Tolete,Edgar,Tolete,Web Developer,HTML,CSS,JavaScript,WordPress,Shopify,Freelancer">
-<link rel="icon" type="image/png" href="./img/edgar-logo-32x32.png" size="32x32">
-<link rel="icon" type="image/png" href="./img/edgar-logo-192x192.png" size="192x192">
-<meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-<link rel='stylesheet' href='assets/ect.css'>
-<link rel='stylesheet' href='assets/aos.css'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edgar Tolete - Frontend Developer</title>
+    <meta name="description" content="Official Website of Edgar Tolete. Edgar Tolete is a Web Developer with the skills of HTML, CSS, JavaScript, WordPress, Shopify and more..">
+    <meta name="keywords" content="Edgar Tolete, Web Developer, frontend developer, html,html5, css, css3, Sass, JavaScript, TypeScript, WordPress,Shopify,Freelancer">
+    <link rel="icon" type="image/png" href="https://edgartolete.com/img/edgar-logo-32x32.png" size="32x32">
+    <link rel="icon" type="image/png" href="https://edgartolete.com/img/edgar-logo-192x192.png" size="192x192">
+    <link rel="stylesheet" href="/dist/style.min.css">
 </head>
-<body>
-	<div box-shadow navbar-1 navbar-md>
-		<div >
-			<div>
-				<div>
-					<img logo src='img/edgar-logo-192x192.png'/>
-					<p style="font-family: var(--font-3); font-size: 24px;" title>Edgar Tolete</p>
-				</div>
-				<div>
-					<img bar src='assets/list.svg' id='bar' onclick='openNav1()'>
-				</div>
-			</div>
-			<div id='menu1'>
-				<a href='#'>HOME</a>
-				<a href='#hardcoded'>MY WORK</a>
-				<a href='https://1drv.ms/w/s!Apo6boOZ22h3hRmT2GZCwd-mA28F?e=LB6Ipg' target="_blank">RESUME</a>
-				<a href='#contact'>CONTACT</a>
-			</div>
-		</div>
-	</div>
-<header header-1>
-<div style='background: black'>
-<h1>Hello! <span>I'm Edgar</span></h1>
-<p>I AM WEB DEVELOPER</p>
-<div btn-cool-1 mt-2>
-<a color-2 href='#hardcoded'>
-	<p><strong>View my Work</strong></p>
+<body  id="top">
+    <aside>
+        <div class="container">
+            <div class="profile">
+                    <img class="avatar" src="https://edgartolete.com/img/oie_TTxPqTqJHkVR.webp" alt="">
+                    <h1>Frontend Developer</h1>
+                    <div class="btn-cool">
+                        <a class="btn-cool link"  onclick="window.open('mailto: edgartolete@outlook.com?subject=I want to hire you Edgar', '_blank', 'width=500, height=600, top=0, left=0')">
+                            <p class="btn-cool text"><strong>HIRE ME</strong></p>
+                        </a>
+                    </div>
+                    <p>Hi, My name is Edgar and I enjoy building websites and systems. I like learning new tools that would make the job done.</p>
+                    <p>Looking forward to work with you.</p>
+                    <div class="links">
+                        <a class="btn shadow zoom pill btn-primary" href="#works">My Works</a>
+                        <a class="btn shadow zoom pill btn-primary" href="#skills">My Skills</a>
+                        <a class="btn shadow zoom pill btn-primary"  href="#story">My Story</a>
+                    </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </aside>
+    <main id="works">
+        <div    class="container">
+            <section>
+                <h2>My Works</h2>
+                <hr>
+                <div class="filter text-center">
+                    <h3>Filter: &nbsp;</h3> 
+                    <div class="filter-links">
+                        <button onclick="hardCoded()">#Hardcoded</button>
+                        <button onclick="wordPress()">#WordPress</button>
+                    </div>
+                
+                </div>
+                <div class="portfolio" wordpress>
+                    <div class="image">
+                        <img src="./img/oie_6CFP90hFTHwq.webp" alt="">
+                    </div>
+                    <div class="description">
+                        <h3>Office Collaboration & AV Design Specialist</h3>
+                        <span>
+                            <var>#WordPress</var>
+                        </span>
+                        <p>I created the website initially with vanilla css and JavaScript. Client would like to add a forum feature
+                            therefore easier way is to update the website to WordPress.
+                        </p>
+                        <a class="btn btn-primary shadow pill zoom" href="https://www.parallaxav.com/" target="_blank">Visit
+                            Site</a>
+                    </div>
+                </div>
+
+                <div class="portfolio " wordpress>
+                    <div class="image">
+                        <img src="./img/oie_g7wsdwdzfC2U.webp" alt="">
+                    </div>
+                    <div class="description">
+                        <h3>Business Foundation Builder Expert</h3>
+                        <span>
+                            <var>#WordPress</var>
+                        </span>
+                        <p>Revamp an existing website. Made the branding color to elegant golden brown and logo rework to match the business nature. 
+
+                        </p>
+                        <a class="btn btn-primary shadow pill zoom" href="https://businessfoundationpros.com/" target="_blank">Visit
+                            Site</a>
+                    </div>
+                </div>
+
+                <div class="portfolio" hardcoded>
+                    <div class="image">
+                        <img src="https://edgartolete.com/img/oie_vHAzeV1UxhIV.webp" alt="">
+                    </div>
+                    <div class="description">
+                        <h3>Digital Marketing Agency</h3>
+                        <span>
+                            <var>#html5</var>
+                            <var>#css3</var>
+                            <var>#hardcoded</var>
+                        </span>
+                        <p>As a test for my job application, my previous company asked me to convert their website from WordPress to html/css and vanilla JavaScript. The only difficult part I faced is making the mega menu mobile responsive.</p>
+                        <a class="btn btn-primary shadow  pill zoom"  href="https://edgartolete.com/infinity" target="_blank">Visit Site</a>
+                    </div>
+                </div>
+
+
+
+                <div class="portfolio" wordpress>
+                    <div class="image">
+                        <img src="./img/oie_vAAeyA9x9V4m.webp" alt="">
+                    </div>
+                    <div class="description">
+                        <h3>Real Estate Agent</h3>
+                        <span>
+                            <var>#WordPress</var>
+                        </span>
+                        <p>Created using WordPress, I setup everything from A-Z. I designed everything from home page, about page, and few landing pages. This is more like a profile website rather than a real estate website that has and IDX. </p>
+                        <a class="btn btn-primary shadow pill zoom" href="https://faribalance.com" target="_blank">Visit
+                            Site</a>
+                    </div>
+                </div>
+                <div class="portfolio" hardcoded>
+                    <div class="image">
+                        <img src="https://edgartolete.com/img/oie_pCtbK3rHhGhC.webp" alt="">
+                    </div>
+                    <div class="description">
+                        <h3>Tree Removal & Trimming Business</h3>
+                        <span>
+                            <var>#html5</var>
+                            <var>#css3</var>
+                            <var>#hardcoded</var>
+                        </span>
+                        <p>This is my very first hardcoded website. Back in early 2020, I was supposed to be for a freelance client who, unfortunately, did not purchase it &#128517;. It's understandable given that my design still needs a lot of work.</p>
+                        <a class="btn btn-primary shadow pill zoom" href="https://edgartolete.com/thetreefeller" target="_blank">Visit Site</a>
+                    </div>
+                </div>
+
+            </section>
+            <section id="skills">
+                <div class="container p-20">
+
+                <h2 style="margin-top:80px;">My Skills</h2>
+                <hr>
+
+                <div class="grid-4" style="max-width: 700px; margin: auto; margin-top: 50px;margin-bottom: 50px;">
+                    <div>
+                        <div class="flex-skills">
+                            <img class="img" src="https://edgartolete.com/img/vuejs.svg" alt="" >
+                            <p class="text">VueJS</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex-skills">
+                            <img class="img"
+                                src="https://edgartolete.com/img/jQuery.png"
+                                alt="" >
+                            <p class="text">jQuery</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex-skills">
+                            <img class="img"
+                                src="https://edgartolete.com/img/JavaScript.png"
+                                alt="" >
+                            <p class="text">JavaScript</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex-skills">
+                            <img class="img"
+                                src="https://edgartolete.com/img/Sass.png"
+                                alt="" >
+                            <p class="text">Sass</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex-skills">
+                            <img class="img"
+                                src="https://edgartolete.com/img/css3.png"
+                                alt="" >
+                            <p class="text">css3</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex-skills">
+                            <img class="img" 
+                            src="https://edgartolete.com/img/html5.png" alt="">
+                            <p class="text">html5</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex-skills">
+                            <img class="img"
+                                src="https://edgartolete.com/img/Shopify.png"
+                                alt="">
+                            <p class="text">Shopify</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex-skills">
+                            <img class="img" 
+                            src="https://edgartolete.com/img/WordPress.png" alt="">
+                            <p class="text">WordPress</p>
+                        </div>
+                    </div>
+                </div>
+                                <p>
+                                    I always learn tools that have a high likelihood of being used in the future. It is beneficial to consider programming languages, libraries, frameworks, and knowledge as tools that will make life easier, particularly for web developers. Rather than memorizing syntax, I concentrate on learning the fundamentals or concepts. 
+                                    </p>
+                                <p>
+                                    Learning the tools to solve a specific problem rather than learning them for the sake of learning them.
+                                </p>
+                </div>
+            </section>
+            <section id="story">
+                <div class="container p-20">
+                    <h2>My Story</h2>
+                    <hr>
+                    <!-- <div class="video-container">
+                        
+                    </div> -->
+                    <p class="" style="margin-top: 50px">
+                        Hi! My name is Edgar, and I have a Bachelor of Science in Information Technology. Since early 2020, I've been working in the web development industry for <span id="date-counter"></span>+ years now. I built several websites but only included a few in my website portfolio. 
+                    </p>
+                    <p>I graduated from college in 2013 as an IT student. I attempted to pursue a programming career immediately after
+                    graduation and even received an interview invitation. Unfortunately, I was unable to do so at the time. A variety of
+                    factors, including the environment, and the cost of my trip to Manila. That was understandable
+                    given my humble upbringing. </p>
+                    
+                    <p>As a result, my first job was as a cashier at a gas station three towns away from home.
+                    I work 12 hour shifts six days a week and 24 hour shifts twice a month. I was 19 at the time and said yes to everything;
+                    things were not easy and it is not a fulfilling job either. I moved from one job to another that was not in the technology industry. </p>
+
+                    <p>The Covid 19 pandemic struck hard in early
+                    2020, and I was laid off as a result. In my spare time, I attempted to re-learn web development, and it came naturally
+                    to me. I freelance using my current skills to keep myself afloat while looking for a web developer job.</p>
+                    <p>
+                    If you are looking for a Frontend Developer, please let me know how I can assist, and I hope you would then join me on
+                    my journey.
+                    </p>
+                </div>
+
+            </section>   
+        </div>
+</main>
+<a href="#top" id="goTop">
+    &#8593;
 </a>
-</div>
-</header>
-<section section id='hardcoded' >
-	<h2 center mt-3>MY WORK</h2>
-	<div grid-2 container gap-1 mt-1 class="card-lift">
-		<div data-aos="flip-right" data-aos-duration="1000">
-			<a href='/infinity' target="_blank">
-			<img src="img/oie_vHAzeV1UxhIV.webp"/>
-			<p center mb-1 style='font-size:22px; color: black'><strong>Infinity</strong></p>
-			</a>
-		</div>
 
-		<div data-aos="flip-right" data-aos-duration="1000">
-			<a href='/thetreefeller' target="_blank">
-			<img src="img/oie_pCtbK3rHhGhC.webp"/>
-			<p center mb-1 style='font-size:22px; color: black'><strong>The Tree Feller</strong></p>
-			</a>
-		</div>
 
-	</div>
-</section>
-<section id='contact' color-white bg-color-black pt-3 pb-3 grid-center >
-	<div class='contact-avatar' pt-3 pb-3 mt-3 mb-3>
-		<div   style='flex-shrink: 1;'>
-			<img src='img/edgartolete.jpg' style='border-radius: 50%; padding: 10px; width: 150px'/>
-		</div>
-		<div style='flex-shrink: 1;  padding: 10px'>
-			<h2 >Contact Me</h2>
-			<p>Email: <a href='mailto:connect@edgartolete.com' color-1>edgartolete@outlook.com</a></p>
-			<p>Skype: <a href='https://join.skype.com/invite/UW7NIwuMA8Ie' color-1>live:edgartolete_1</a></p>
-			<p>WhatsApp: +63 916 200 2194</p>
-		</div>
-	</div>
-<section>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-<script src='assets/ect.js'></script>
-<script src='assets/aos.js'></script>
-<script>  AOS.init();
-/*	data-aos="fade-up"
-    data-aos-offset="200"
-    data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-center" */
-
-</script>
+<script src="index.js"></script>
 </body>
 </html>
