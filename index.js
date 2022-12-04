@@ -30,27 +30,57 @@ dateCounter.innerHTML = new Date().getFullYear() - 2020;
 let allHardCoded = document.querySelectorAll('[hardcoded]')
 hideAllHardCoded = () => {
   for(var i = 0; i < allHardCoded.length; i++){
-  allHardCoded[i].style = "display: none";
+    if(allHardCoded[i].style.display != 'none'){
+        allHardCoded[i].style = "animation-name: hidePortfolio; animation-fill-mode: forwards;animation-duration: 800ms";
+    }
   }
+    setTimeout(()=>{
+      for(var i = 0; i < allHardCoded.length; i++){
+          allHardCoded[i].style = "display: none";
+      }
+    }, 500)
 }
 showAllHardCoded = () => {
-  for(var i = 0; i < allHardCoded.length; i++){
-  allHardCoded[i].style = "display: grid";
+  if(allHardCoded[0].style.display == 'none'){
+    setTimeout(()=>{
+              for(var i = 0; i < allHardCoded.length; i++){
+              if(allHardCoded[i].style.display == 'none'){
+                allHardCoded[i].style = "animation-name: showPortfolio; animation-fill-mode: forwards;animation-duration: 800ms";
+          }
+        }
+
+    },300)
   }
+
+
+
+
 }
 
 
 let allWordPress = document.querySelectorAll('[wordpress]');
 hideAllWordPress = () => {
   for(var i = 0; i < allWordPress.length; i++){
-  allWordPress[i].style = "display: none";
- 
+    if(allWordPress[i].style.display != 'none'){
+        allWordPress[i].style = "animation-name: hidePortfolio; animation-fill-mode: forwards;animation-duration: 800ms";
+    } 
   }
+  setTimeout(() => {
+      for(var i = 0; i < allWordPress.length; i++){
+          allWordPress[i].style = "display: none";
+          }
+  }, 500);
 }
 showAllWordPress = () => {
-  for(var i = 0; i < allWordPress.length; i++){
-  allWordPress[i].style = "display: grid";
+  if(allWordPress[0].style.display == 'none'){
+    setTimeout(() => {
+        for(var i = 0; i < allWordPress.length; i++){
+          if(allWordPress[i].style.display == 'none'){
+                  allWordPress[i].style = "animation-name: showPortfolio; animation-fill-mode: forwards;animation-duration: 800ms";
+            }
  
+         }
+    }, 300);
   }
 }
 
@@ -63,3 +93,9 @@ wordPress = () =>{
   showAllWordPress();
   hideAllHardCoded();
 }
+
+showAll = () => {
+   showAllWordPress();
+    showAllHardCoded();
+
+  }

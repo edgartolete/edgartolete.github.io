@@ -183,12 +183,30 @@ section{
     background: none;
     border: none;
     cursor: pointer;
-    &:hover{
+    &:hover, &:active, &:focus{
         color: var(--primary)
-    }
+        }
     }
 }
 
 [arial-hidden='true']{
     display: none;
+}
+
+@keyframes hidePortfolio {
+    0%{transform: scale(1); opacity: 1;}
+    100%{transform: scale(0); opacity: 0;}
+
+}
+@keyframes showPortfolio {
+    0% {
+        transform: scale(0);
+        opacity: 0
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1
+    }
+
 }

@@ -524,10 +524,52 @@ section h2 {
   border: none;
   cursor: pointer;
 }
-.filter-links button:hover {
+.filter-links button:hover, .filter-links button:active, .filter-links button:focus {
   color: var(--primary);
 }
 
 [arial-hidden=true] {
   display: none;
+}
+
+@-webkit-keyframes hidePortfolio {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes hidePortfolio {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes showPortfolio {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes showPortfolio {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,47 @@
+h1 {
+  font-family: var(--font-1);
+  font-weight: 400;
+  font-size: clamp(35px, 5vw, 55px);
+}
+
+h2 {
+  font-family: var(--font-1);
+  font-weight: 700;
+  font-size: 47px;
+}
+
+h3 {
+  font-family: var(--font-1);
+  font-weight: 300;
+  font-size: 32px;
+}
+
+h4 {
+  font-family: var(--font-1);
+  font-weight: 400;
+  font-size: 24px;
+}
+
+h5 {
+  font-family: var(--font-1);
+  font-weight: 400;
+  font-size: 28px;
+}
+
+h6 {
+  font-family: var(--font-1);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+p {
+  font-family: var(--font-3);
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--font-2);
+}/*# sourceMappingURL=text.css.map */

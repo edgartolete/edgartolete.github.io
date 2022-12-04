@@ -1,0 +1,43 @@
+.color-1 {
+  color: var(--color-1);
+}
+
+.bg-color-1 {
+  background-color: var(--color-1);
+}
+
+.color-2 {
+  color: var(--color-2);
+}
+
+.bg-color-2 {
+  background-color: var(--color-2);
+}
+
+.color-3 {
+  color: var(--color-3);
+}
+
+.bg-color-3 {
+  background-color: var(--color-3);
+}
+
+.color-white {
+  color: white;
+}
+
+.bg-color-black {
+  background-color: black;
+}
+
+.color-gold {
+  color: #FFD700;
+}
+
+.bg-color-gold {
+  background-color: #FFD700;
+}
+
+.bg-color-light-gray {
+  background-color: #F5F5F5;
+}/*# sourceMappingURL=colors.css.map */
