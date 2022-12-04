@@ -554,12 +554,14 @@ section h2 {
 }
 
 .filter-links button {
+  border: 1px solid black;
   background: none;
   border: none;
   cursor: pointer;
 }
 .filter-links button:hover, .filter-links button:active, .filter-links button:focus {
-  color: var(--primary);
+  background: var(--primary);
+  color: white;
 }
 
 [arial-hidden=true] {
