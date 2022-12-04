@@ -76,4 +76,23 @@ hr {
 
 .text-center {
   text-align: center;
+}
+
+.p-20 {
+  padding-top: 20px;
+}
+
+.grid {
+  display: grid;
+}
+.grid.justify-center {
+  justify-content: center;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-20 {
+  margin-top: 20px;
 }/*# sourceMappingURL=global.css.map */
