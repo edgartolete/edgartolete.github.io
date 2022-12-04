@@ -54,9 +54,9 @@ showAllHardCoded = () => {
   if(allHardCoded[0].style.display == 'none'){
     setTimeout(()=>{
               for(var i = 0; i < allHardCoded.length; i++){
-              if(allHardCoded[i].style.display == 'none'){
+              // if(allHardCoded[i].style.display == 'none'){
                 allHardCoded[i].style = "animation-name: showPortfolio; animation-fill-mode: forwards;animation-duration: 800ms";
-          }
+          //}
         }
 
     },300)
@@ -85,11 +85,11 @@ showAllWordPress = () => {
   if(allWordPress[0].style.display == 'none'){
     setTimeout(() => {
         for(var i = 0; i < allWordPress.length; i++){
-          if(allWordPress[i].style.display == 'none'){
+          // if(allWordPress[i].style.display == 'none'){
                   allWordPress[i].style = "animation-name: showPortfolio; animation-fill-mode: forwards;animation-duration: 800ms";
             }
  
-         }
+        //  }
     }, 300);
   }
 }
