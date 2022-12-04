@@ -275,6 +275,9 @@ section h2 {
   transition-duration: 300ms;
 }
 .btn-cool .link {
+  background: none;
+  border: none;
+  padding: 0;
   overflow: hidden;
   cursor: pointer;
   position: relative;
