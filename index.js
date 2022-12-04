@@ -1,15 +1,9 @@
-
-console.time('JS Performance');
-console.timeLog('JS Performance');
-document.addEventListener("DOMContentLoaded", function () {
-  console.timeLog('JS Performance');
-  console.timeEnd('JS Performance');
-  var allImgHeight = document.querySelectorAll('img[height]');
+setTimeout(() => {
+    var allImgHeight = document.querySelectorAll('img[height]');
     for(var i = 0; i < allImgHeight.length; i++){
       allImgHeight[i].setAttribute("height", "auto");
     }
-});
-
+}, 3000);
 
 // Get the button:
 
