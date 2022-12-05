@@ -25,6 +25,7 @@ legend {
 }
 
 .btn {
+  text-align: center;
   font-weight: bold;
   transition-duration: 300ms;
   border-radius: 5px;
