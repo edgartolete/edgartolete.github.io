@@ -94,7 +94,7 @@ showAllWordPress = () => {
   }
 }
 
-hardCoded = () =>{
+css3 = () =>{
   showAllHardCoded();
   hideAllWordPress();
 }

@@ -32,4 +32,9 @@
 }
 .profile .links a:hover {
   background: var(--secondary);
+}
+@media (max-width: 350px) {
+  .profile .links a {
+    padding: 7px 10px;
+  }
 }/*# sourceMappingURL=profile.css.map */
