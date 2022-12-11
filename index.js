@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Get the button:
 
 let myButton = document.getElementById("goTop");
-mybutton.style.display = "none";
+myButton.style.display = "none";
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
