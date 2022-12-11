@@ -10,16 +10,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Get the button:
 
-let mybutton = document.getElementById("goTop");
+let myButton = document.getElementById("goTop");
 mybutton.style.display = "none";
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "grid";
+    myButton.style.display = "grid";
   } else {
-    mybutton.style.display = "none";
+    myButton.style.display = "none";
   }
 }
 
