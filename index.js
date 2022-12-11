@@ -37,7 +37,7 @@ dateCounter.innerHTML = new Date().getFullYear() - 2020;
 
 
 
-let allHardCoded = document.querySelectorAll('[hardcoded]')
+let allHardCoded = document.querySelectorAll('[css3]')
 hideAllHardCoded = () => {
   for(var i = 0; i < allHardCoded.length; i++){
     if(allHardCoded[i].style.display != 'none'){
