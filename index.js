@@ -38,7 +38,7 @@ dateCounter.innerHTML = new Date().getFullYear() - 2020;
 
 
 let allHardCoded = document.querySelectorAll('[css3]')
-hideAllHardCoded = () => {
+let hideAllHardCoded = () => {
   for(var i = 0; i < allHardCoded.length; i++){
     if(allHardCoded[i].style.display != 'none'){
         allHardCoded[i].style = "animation-name: hidePortfolio; animation-fill-mode: forwards;animation-duration: 800ms";
@@ -50,7 +50,7 @@ hideAllHardCoded = () => {
       }
     }, 500)
 }
-showAllHardCoded = () => {
+let showAllHardCoded = () => {
   if(allHardCoded[0].style.display == 'none'){
     setTimeout(()=>{
               for(var i = 0; i < allHardCoded.length; i++){
@@ -69,7 +69,7 @@ showAllHardCoded = () => {
 
 
 let allWordPress = document.querySelectorAll('[wordpress]');
-hideAllWordPress = () => {
+let hideAllWordPress = () => {
   for(var i = 0; i < allWordPress.length; i++){
     if(allWordPress[i].style.display != 'none'){
         allWordPress[i].style = "animation-name: hidePortfolio; animation-fill-mode: forwards;animation-duration: 800ms";
@@ -81,7 +81,7 @@ hideAllWordPress = () => {
           }
   }, 500);
 }
-showAllWordPress = () => {
+let showAllWordPress = () => {
   if(allWordPress[0].style.display == 'none'){
     setTimeout(() => {
         for(var i = 0; i < allWordPress.length; i++){
