@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /tutorials/
+Disallow: /thetreefeller/
+Disallow: /infinity/
+Disallow: /html-semantics/
+Disallow: /vue-covid19-updates/
+Disallow: /vue-stock-analysis/
+Disallow: /react-stock-analysis/
