@@ -249,6 +249,7 @@ section h2 {
 }
 .portfolio .description h3 {
   font-size: 2rem;
+  margin-bottom: 10px;
 }
 .portfolio .description h3,
 .portfolio .description p, .portfolio .description span {
@@ -265,13 +266,16 @@ section h2 {
 .portfolio .description a:hover {
   background-color: var(--secondary);
 }
+.portfolio .description span {
+  margin-bottom: 10px;
+}
 
 @media (max-width: 1100px) {
   .portfolio {
     grid-template-columns: 1fr;
   }
   .portfolio h3,
-.portfolio p, .portfolio span {
+  .portfolio p, .portfolio span {
     text-align: center !important;
   }
   .portfolio a {
@@ -328,8 +332,7 @@ section h2 {
 .btn-cool .link::before {
   content: "";
   box-shadow: 0px 0px 20px white;
-  -webkit-animation: btnmovestart 2000ms 0ms linear infinite;
-          animation: btnmovestart 2000ms 0ms linear infinite;
+  animation: btnmovestart 2000ms 0ms linear infinite;
   opacity: 0;
   position: absolute;
   top: 0;
@@ -342,8 +345,7 @@ section h2 {
 .btn-cool .link::after {
   content: "";
   box-shadow: 0px 0px 20px white;
-  -webkit-animation: btnmovetop 2000ms 500ms linear infinite;
-          animation: btnmovetop 2000ms 500ms linear infinite;
+  animation: btnmovetop 2000ms 500ms linear infinite;
   opacity: 0;
   position: absolute;
   top: 0;
@@ -355,7 +357,6 @@ section h2 {
 .btn-cool .text {
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   padding: 10px 20px;
   background: var(--btn-bg-color);
@@ -369,8 +370,7 @@ section h2 {
 .btn-cool .text::before {
   content: "";
   box-shadow: 0px 0px 20px white;
-  -webkit-animation: btnmovebottom 2000ms 0ms linear infinite;
-          animation: btnmovebottom 2000ms 0ms linear infinite;
+  animation: btnmovebottom 2000ms 0ms linear infinite;
   opacity: 0;
   position: absolute;
   bottom: 0;
@@ -381,8 +381,7 @@ section h2 {
 }
 .btn-cool .text::after {
   box-shadow: 0px 0px 20px white;
-  -webkit-animation: btnmovebend 2000ms 500ms linear infinite;
-          animation: btnmovebend 2000ms 500ms linear infinite;
+  animation: btnmovebend 2000ms 500ms linear infinite;
   opacity: 0;
   content: "";
   position: absolute;
@@ -393,17 +392,6 @@ section h2 {
   background: linear-gradient(to top, RGBA(23, 121, 255, 0), var(--btn-dash-color), var(--btn-dash-color));
 }
 
-@-webkit-keyframes btnmovestart {
-  0% {
-    transform: translateX(-100%);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(100%);
-    opacity: 1;
-  }
-}
-
 @keyframes btnmovestart {
   0% {
     transform: translateX(-100%);
@@ -411,16 +399,6 @@ section h2 {
   }
   100% {
     transform: translateX(100%);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes btnmovetop {
-  0% {
-    transform: translateY(-200%);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(100%);
     opacity: 1;
   }
 }
@@ -434,16 +412,6 @@ section h2 {
     opacity: 1;
   }
 }
-@-webkit-keyframes btnmovebend {
-  0% {
-    transform: translateY(200%);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-100%);
-    opacity: 1;
-  }
-}
 @keyframes btnmovebend {
   0% {
     transform: translateY(200%);
@@ -451,16 +419,6 @@ section h2 {
   }
   100% {
     transform: translateY(-100%);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes btnmovebottom {
-  0% {
-    transform: translateX(100%);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(-100%);
     opacity: 1;
   }
 }
@@ -577,17 +535,6 @@ section h2 {
   display: none;
 }
 
-@-webkit-keyframes hidePortfolio {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0);
-    opacity: 0;
-  }
-}
-
 @keyframes hidePortfolio {
   0% {
     transform: scale(1);
@@ -596,16 +543,6 @@ section h2 {
   100% {
     transform: scale(0);
     opacity: 0;
-  }
-}
-@-webkit-keyframes showPortfolio {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
   }
 }
 @keyframes showPortfolio {

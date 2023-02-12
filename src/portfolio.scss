@@ -14,9 +14,9 @@
     .description {
         display: grid;
         align-content: center;
-
         h3 {
             font-size: 2rem;
+            margin-bottom: 10px;
         }
 
         h3,
@@ -34,6 +34,9 @@
             &:hover{
                 background-color: var(--secondary);
             }
+        }
+        span{
+            margin-bottom: 10px;
         }
 
     }

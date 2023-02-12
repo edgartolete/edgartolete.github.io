@@ -17,6 +17,7 @@
 }
 .portfolio .description h3 {
   font-size: 2rem;
+  margin-bottom: 10px;
 }
 .portfolio .description h3,
 .portfolio .description p, .portfolio .description span {
@@ -33,13 +34,16 @@
 .portfolio .description a:hover {
   background-color: var(--secondary);
 }
+.portfolio .description span {
+  margin-bottom: 10px;
+}
 
 @media (max-width: 1100px) {
   .portfolio {
     grid-template-columns: 1fr;
   }
   .portfolio h3,
-.portfolio p, .portfolio span {
+  .portfolio p, .portfolio span {
     text-align: center !important;
   }
   .portfolio a {
