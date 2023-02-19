@@ -1,0 +1,10 @@
+[
+    {
+        "name": "name",
+        "email" : "email",
+        "frontEndTech" : "frontEndTech",
+        "frontEndSalary" : "frontEndSalary",
+        "backEndTech" : "backEndTech",
+        "backEndSalary" : "backEndSalary"
+    }
+]
